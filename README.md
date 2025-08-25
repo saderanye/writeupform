@@ -3,7 +3,7 @@
 ## Setup Instructions
 
 - open terminal to your ~/Projects folder.
-- git clone https://github.com/GC-04/writeupform.git
+- git clone git@github.com:GC-04/writeupform.git
 - open Cursor editor and open that folder
 - should see readme in there.
 - in terminal

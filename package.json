@@ -1,0 +1,25 @@
+{
+  "name": "writeupform",
+  "version": "0.1.0",
+  "description": "Write Up Form Application",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build && vite build",
+    "dev": "vite --port 3000",
+    "preview": "vite preview --port 3000",
+    "clean": "rm -rf lib dist"
+  },
+  "dependencies": {
+    "@adobe/data": "^0.5.1",
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.8.3",
+    "vite": "^4.3.9",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "author": "",
+  "license": "MIT"
+}
+

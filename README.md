@@ -2,6 +2,17 @@
 
 ## Setup Instructions
 
+- open terminal to your ~/Projects folder.
+- git clone https://github.com/GC-04/writeupform.git
+- open Cursor editor and open that folder
+- should see readme in there.
+- in terminal
+  - cd into project folder
+  - install dependencies with `pnpm install`
+  - run the dev server with `pnpm dev`
+  - open browser to `http://localhost:3000/`
+  
+
 ## Initial Creation Steps
 
 - go to github.com

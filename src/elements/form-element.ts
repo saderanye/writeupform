@@ -42,7 +42,7 @@ export class FormElementComponent extends FormElement {
                 this.service.state.database.transactions.submitForm();
             }}>
                 <div class="form-section">
-                    <h3 class="form-section-title">Basic Information</h3>
+                    <h3 class="form-section-title">Advanced Information</h3>
                     <form-field 
                         label="Title" 
                         name="title"

@@ -11,7 +11,11 @@
   - install dependencies with `pnpm install`
   - run the dev server with `pnpm dev`
   - open browser to `http://localhost:3000/`
-  
+  - open src/elements/form-element.s
+    - edit one of the words of html.
+    - verify the change immediately in the browser.
+
+
 
 ## Initial Creation Steps
 

@@ -15,7 +15,12 @@
     - edit one of the words of html.
     - verify the change immediately in the browser.
 
-
+## Committing Changes
+- git status
+- git commit -A
+- git commit -am "<describe changes>"
+- git push
+- git pull
 
 ## Initial Creation Steps
 

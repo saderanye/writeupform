@@ -6,7 +6,7 @@
 - git clone git@github.com:GC-04/writeupform.git
 - open Cursor editor and open that folder
 - should see readme in there.
-- in terminal
+- in terminal~
   - cd into project folder
   - install dependencies with `pnpm install`
   - run the dev server with `pnpm dev`

@@ -1,12 +1,10 @@
-import { ServiceApplication, withHooks } from "@adobe/data/lit";
-import { MainService } from "./services/main-service/main-service.js";
-import { createMainService } from "./services/main-service/create-main-service.js";
 import { customElement } from "lit/decorators.js";
 import { html, css } from "lit";
 import "./elements/index.js";
+import { LitElement } from "lit";
 
 @customElement("form-main-element")
-export class FormMainElement extends ServiceApplication<MainService> {
+export class FormMainElement extends LitElement {
     static override styles = css`
         .form-container {
             max-width: 800px;
@@ -36,15 +34,7 @@ export class FormMainElement extends ServiceApplication<MainService> {
         }
     `;
 
-    protected override async createService(): Promise<MainService> {
-        return createMainService();
-    }
-
-    @withHooks
     override render() {
-        if (!this.service) {
-            return html`<div>Loading...</div>`;
-        }
         return html`
             <div class="form-container">
                 <div class="form-header">

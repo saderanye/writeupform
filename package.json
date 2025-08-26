@@ -10,7 +10,6 @@
     "clean": "rm -rf lib dist"
   },
   "dependencies": {
-    "@adobe/data": "^0.5.1",
     "lit": "^3.1.0"
   },
   "devDependencies": {

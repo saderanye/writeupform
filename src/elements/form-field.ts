@@ -1,9 +1,8 @@
-import { FormElement } from "../form-element.js";
-import { css, html } from "lit";
+import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 @customElement("form-field")
-export class FormFieldElement extends FormElement {
+export class FormFieldElement extends LitElement {
     static override styles = css`
         .field-container {
             display: flex;
@@ -53,7 +52,10 @@ export class FormFieldElement extends FormElement {
     value = "";
 
     @property({ type: String })
-    type = "text";
+    type: "text" | "email" | "password" | "number" = "text";
+
+    @property({ type: Boolean })
+    isTextarea = false;
 
     @property({ type: String })
     placeholder = "";
@@ -61,16 +63,14 @@ export class FormFieldElement extends FormElement {
     @property({ type: Boolean })
     required = false;
 
-    protected override render() {
-        const isTextarea = this.type === "textarea";
-        
+    override render() {
         return html`
             <div class="field-container">
                 <label class="field-label" for=${this.name}>
                     ${this.label}${this.required ? " *" : ""}
                 </label>
                 
-                ${isTextarea 
+                ${this.isTextarea 
                     ? html`
                         <textarea
                             id=${this.name}
